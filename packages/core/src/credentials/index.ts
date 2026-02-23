@@ -1,0 +1,1 @@
+export { CredentialClient } from "./CredentialClient";

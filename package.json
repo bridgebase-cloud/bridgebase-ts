@@ -1,0 +1,50 @@
+{
+  "name": "bridgebase-monorepo",
+  "version": "0.2.0",
+  "description": "BridgeBase Node.js SDK - Monorepo with modular database adapters",
+  "private": true,
+  "workspaces": [
+    "packages/core",
+    "packages/redis",
+    "packages/tigerbeetle"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:watch": "npm run build:watch --workspaces",
+    "test": "npm run test --workspaces",
+    "test:watch": "npm run test:watch --workspaces",
+    "lint": "npm run lint --workspaces",
+    "type-check": "npm run type-check --workspaces",
+    "clean": "rm -rf packages/*/dist && rm -rf packages/*/node_modules"
+  },
+  "keywords": [
+    "database",
+    "gateway",
+    "tigerbeetle",
+    "redis",
+    "bridgebase",
+    "modular"
+  ],
+  "author": "BridgeBase Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bridgebase-cloud/bridgebase-ts"
+  },
+  "homepage": "https://github.com/bridgebase-cloud/bridgebase-ts#readme",
+  "bugs": {
+    "url": "https://github.com/bridgebase-cloud/bridgebase-ts/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "esbuild": "^0.20.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "tsup": "^8.0.0"
+  }
+}

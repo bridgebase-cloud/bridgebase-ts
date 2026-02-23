@@ -1,0 +1,67 @@
+{
+  "name": "@bridgebase/redis",
+  "version": "0.2.0",
+  "description": "BridgeBase Redis Adapter - Native Redis client wrapper with BridgeBase gateway integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --passWithNoTests",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "redis",
+    "bridgebase",
+    "database-adapter"
+  ],
+  "author": "BridgeBase Team",
+  "license": "MIT",
+  "homepage": "https://github.com/bridgebase-cloud/bridgebase-ts/tree/main/packages/redis#readme",
+  "bugs": {
+    "url": "https://github.com/bridgebase-cloud/bridgebase-ts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bridgebase-cloud/bridgebase-ts",
+    "directory": "packages/redis"
+  },
+  "dependencies": {
+    "@bridgebase/core": "^0.2.0"
+  },
+  "peerDependencies": {
+    "redis": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "redis": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@bridgebase/core": "^0.2.0",
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0",
+    "tsup": "^8.0.0",
+    "redis": "^5.0.0"
+  }
+}
