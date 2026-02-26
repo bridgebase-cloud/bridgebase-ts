@@ -1,6 +1,6 @@
 {
   "name": "@bridgebase/redis",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "BridgeBase Redis Adapter - Native Redis client wrapper with BridgeBase gateway integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -44,15 +44,8 @@
     "directory": "packages/redis"
   },
   "dependencies": {
-    "@bridgebase/core": "^0.2.0"
-  },
-  "peerDependencies": {
+    "@bridgebase/core": "^0.2.0",
     "redis": "^5.0.0"
-  },
-  "peerDependenciesMeta": {
-    "redis": {
-      "optional": true
-    }
   },
   "devDependencies": {
     "@bridgebase/core": "^0.2.0",

@@ -28,7 +28,7 @@ This monorepo contains database adapters for BridgeBase:
 ### Redis
 
 ```bash
-npm install @bridgebase/redis redis
+npm install @bridgebase/redis
 ```
 
 ```typescript
@@ -47,7 +47,7 @@ await session.disconnect();
 ### TigerBeetle
 
 ```bash
-npm install @bridgebase/tigerbeetle tigerbeetle-node
+npm install @bridgebase/tigerbeetle
 ```
 
 ```typescript
@@ -91,13 +91,13 @@ Install only what you need:
 
 ```bash
 # Redis only
-npm install @bridgebase/redis redis
+npm install @bridgebase/redis
 
 # TigerBeetle only
-npm install @bridgebase/tigerbeetle tigerbeetle-node
+npm install @bridgebase/tigerbeetle
 
 # Both
-npm install @bridgebase/redis @bridgebase/tigerbeetle redis tigerbeetle-node
+npm install @bridgebase/redis @bridgebase/tigerbeetle
 ```
 
 ### Option 2: Core Package

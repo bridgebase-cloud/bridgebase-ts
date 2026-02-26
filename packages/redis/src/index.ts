@@ -75,4 +75,4 @@ export type { SessionConfig, DatabaseCredentials } from "@bridgebase/core";
 /**
  * SDK version
  */
-export const version = "0.2.0";
+export const version = "0.2.1";

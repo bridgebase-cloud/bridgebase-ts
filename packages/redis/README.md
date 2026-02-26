@@ -12,7 +12,7 @@ Redis adapter for BridgeBase - Native Redis client with gateway integration.
 ## Installation
 
 ```bash
-npm install @bridgebase/redis redis
+npm install @bridgebase/redis
 ```
 
 ## Quick Start

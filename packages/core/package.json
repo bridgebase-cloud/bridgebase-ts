@@ -1,6 +1,6 @@
 {
   "name": "@bridgebase/core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "BridgeBase Core - Shared session management, gateway resolution, and proxy lifecycle",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

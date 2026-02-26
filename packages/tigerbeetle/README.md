@@ -12,7 +12,7 @@ TigerBeetle adapter for BridgeBase - Native TigerBeetle client with gateway inte
 ## Installation
 
 ```bash
-npm install @bridgebase/tigerbeetle tigerbeetle-node
+npm install @bridgebase/tigerbeetle
 ```
 
 ## Quick Start
